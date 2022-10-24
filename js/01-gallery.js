@@ -31,11 +31,12 @@ function createGalleryImg(galleryItems) {
 galleryContainer.addEventListener('click', onImageClick);
 
 function onImageClick(event) {
- const isImg = event.target.classList.contains('gallery__image');
- event.preventDefault();
-  if(!isImg) {
+  const isImg = event.target.classList.contains('gallery__image');
+  event.preventDefault();
+  if (!isImg) {
     return;
   }
+};
 
   const imgEl = document.querySelector('.gallery__link');
   imgEl.href = event.target.dataset.source;
