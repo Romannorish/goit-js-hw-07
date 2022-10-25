@@ -52,19 +52,19 @@ function onImageClick(event) {
   const modalEl = document.querySelector('.modal__image');
   modalEl.src = event.target.dataset.source;
  
-//   // Закриття модалки по escape__________________________
+  // Закриття модалки по escape__________________________
 
-//   window.addEventListener('keydown', closeModalEsc)
+  window.addEventListener('keydown', closeModalEsc)
 
-//   function closeModalEsc(event) {
+  function closeModalEsc(event) {
 
-//     if(event.key === "Escape") {
-//       instance.close();
+    if(event.key === "Escape") {
+      instance.close();
 
-//       window.removeEventListener('keydown', closeModalEsc);
-//     }
-//   }
-// };
+      window.removeEventListener('keydown', closeModalEsc);
+    }
+  }
+;
 
 
 
